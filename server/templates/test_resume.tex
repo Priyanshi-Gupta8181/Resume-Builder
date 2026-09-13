@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,top=.38in,bottom=.48in,left=.52in,right=.52in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{needspace}
+\usepackage{fontawesome5}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+\definecolor{muted}{HTML}{667085}
+\definecolor{blacktext}{HTML}{111827}
+\definecolor{photoborder}{HTML}{CBD5E1}
+
+% IMPORTANT: keep this option list on one logical paragraph.
+% Blank lines inside \setlist[...] cause enumitem parsing errors.
+\setlist[itemize]{leftmargin=1.25em,itemsep=1.2pt,topsep=2.5pt,parsep=0pt,partopsep=0pt}
+
+\newcommand{\sectionheading}[1]{%
+  \Needspace{4\baselineskip}%
+  \vspace{.14cm}%
+  {\fontsize{12.2}{14}\selectfont\bfseries\color{blacktext}\MakeUppercase{#1}}\par
+  \vspace{.045cm}%
+  \hrule height 1.05pt
+  \vspace{.085cm}%
+}
+
+\begin{document}
+\noindent
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X@{}>{\raggedleft\arraybackslash}p{1.25in}@{}}
+\begin{minipage}[t]{\linewidth}
+\vspace{0pt}
+{\fontsize{27}{30}\selectfont\bfseries\color{blacktext} Test User}\par
+{\vspace{.01cm}\fontsize{11.5}{13}\selectfont\bfseries\color{muted} Data Science Student}\par
+\vspace{.055cm}
+{\fontsize{8.4}{10}\selectfont\color{muted} \faPhone\ 9876543210\hspace{.18cm}\faEnvelope\ \href{mailto:test@example.com}{test@example.com}\hspace{.18cm}\faMapMarker*\ Noida}\par
+
+
+\end{minipage}
+&
+\begin{minipage}[t]{1.25in}
+\vspace{0pt}
+
+\end{minipage}
+\end{tabularx}
+\vspace{.08cm}\hrule height 1.05pt
+
+\sectionheading{Career Objective}
+{\fontsize{9.4}{11.8}\selectfont Seeking an opportunity to apply technical and analytical skills in a professional environment.}\par
+\sectionheading{Work Experience}
+\Needspace{5\baselineskip}
+{\fontsize{10.3}{12.2}\selectfont\bfseries Intern}\hfill {\fontsize{8.4}{10}\selectfont 01/2026 -- 06/2026}\par
+{\fontsize{9}{11}\selectfont\bfseries\color{muted} Example Company}\hfill {\fontsize{8.3}{10}\selectfont\color{muted} Noida}\par
+\begin{itemize}
+\item Worked on data analysis
+\item Built reports
+\end{itemize}
+\sectionheading{Education}
+\Needspace{4\baselineskip}
+{\fontsize{10.3}{12.2}\selectfont\bfseries B.Tech Data Science}\hfill {\fontsize{8.4}{10}\selectfont 2026}\par
+{\fontsize{9}{11}\selectfont\bfseries\color{muted} Example University}\hfill {\fontsize{8.3}{10}\selectfont\color{muted} Noida}\par
+{\fontsize{8.5}{10.5}\selectfont CGPA: 8.5}\par
+\sectionheading{Projects}
+\Needspace{5\baselineskip}
+{\fontsize{10.3}{12.2}\selectfont\bfseries Resume Builder}\par
+{\fontsize{8.5}{10.5}\selectfont\itshape\color{muted} React, Node.js, LaTeX}\par
+\begin{itemize}
+\item Created a resume builder
+\item Generated PDF resumes
+\end{itemize}
+\sectionheading{Certifications}
+\begin{itemize}
+\item Oracle Academy Java
+\end{itemize}
+\sectionheading{Technical Skills}
+{\fontsize{9.3}{11.5}\selectfont Java, Python, SQL, React}\par
+\sectionheading{Soft Skills}
+{\fontsize{9.3}{11.5}\selectfont Communication, Leadership}\par
+\sectionheading{Achievements}
+\begin{itemize}
+\item Won coding competition
+\end{itemize}
+\sectionheading{Extracurricular Activities}
+\begin{itemize}
+\item President of technical club
+\item Organized coding events
+\end{itemize}
+
+\end{document}
