@@ -151,7 +151,8 @@ export default function App() {
         throw new Error(response.data?.message || "PDF generation failed.");
       }
 
-      window.location.href = "http://localhost:5000/download-resume";
+      window.location.href =
+  `https://resume-builder-f0et.onrender.com/download-resume?t=${Date.now()}`;
     } catch (error) {
       console.error(error);
       alert(
