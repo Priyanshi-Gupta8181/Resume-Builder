@@ -143,9 +143,9 @@ export default function App() {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/generate-resume",
-        payload
-      );
+  "https://resume-builder-f0et.onrender.com/generate-resume",
+  payload
+);
 
       if (!response.data?.success) {
         throw new Error(response.data?.message || "PDF generation failed.");
