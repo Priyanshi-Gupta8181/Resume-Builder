@@ -284,3 +284,27 @@ textarea {
     padding: 14px;
   }
 }
+/* Date input styling */
+input[type="date"] {
+  color: #64748b;
+  cursor: pointer;
+}
+
+input[type="date"]:focus {
+  color: #172554;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  color: #64748b;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+.date-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}

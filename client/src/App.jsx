@@ -230,8 +230,25 @@ export default function App() {
                 <ObjectField value={item.role} name="role" placeholder="Job Role / Position" onChange={(event) => updateObject(setExperience, index, event)} />
                 <ObjectField value={item.company} name="company" placeholder="Company / Organization" onChange={(event) => updateObject(setExperience, index, event)} />
                 <ObjectField value={item.location} name="location" placeholder="Location" onChange={(event) => updateObject(setExperience, index, event)} />
-                <ObjectField value={item.startDate} name="startDate" type="date" onChange={(event) => updateObject(setExperience, index, event)} />
-                <ObjectField value={item.endDate} name="endDate" type="date" onChange={(event) => updateObject(setExperience, index, event)} />
+                <div className="date-field">
+  <label>Start Date</label>
+  <ObjectField
+    value={item.startDate}
+    name="startDate"
+    type="date"
+    onChange={(event) => updateObject(setExperience, index, event)}
+  />
+</div>
+
+<div className="date-field">
+  <label>End Date</label>
+  <ObjectField
+    value={item.endDate}
+    name="endDate"
+    type="date"
+    onChange={(event) => updateObject(setExperience, index, event)}
+  />
+</div>
               </div>
               <textarea name="description" placeholder="Responsibilities / achievements. One point per line." value={item.description} onChange={(event) => updateObject(setExperience, index, event)} />
             </div>
@@ -265,8 +282,25 @@ export default function App() {
               <div className="grid">
                 <ObjectField value={item.title} name="title" placeholder="Project Title" onChange={(event) => updateObject(setProjects, index, event)} />
                 <ObjectField value={item.tech} name="tech" placeholder="Technologies Used" onChange={(event) => updateObject(setProjects, index, event)} />
-                <ObjectField value={item.startDate} name="startDate" type="date" onChange={(event) => updateObject(setProjects, index, event)} />
-                <ObjectField value={item.endDate} name="endDate" type="date" onChange={(event) => updateObject(setProjects, index, event)} />
+                <div className="date-field">
+  <label>Start Date</label>
+  <ObjectField
+    value={item.startDate}
+    name="startDate"
+    type="date"
+    onChange={(event) => updateObject(setProjects, index, event)}
+  />
+</div>
+
+<div className="date-field">
+  <label>End Date</label>
+  <ObjectField
+    value={item.endDate}
+    name="endDate"
+    type="date"
+    onChange={(event) => updateObject(setProjects, index, event)}
+  />
+</div>
                 <ObjectField value={item.githubLink} name="githubLink" placeholder="GitHub Link (Optional)" onChange={(event) => updateObject(setProjects, index, event)} />
                 <ObjectField value={item.liveLink} name="liveLink" placeholder="Live Demo Link (Optional)" onChange={(event) => updateObject(setProjects, index, event)} />
               </div>
